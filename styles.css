@@ -1,0 +1,123 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+main{
+    display: flex;
+    justify-content: center;
+    padding-top: 4rem;
+}
+.card-todo{
+   
+    width: 60%;
+    padding: 1rem;
+    border-radius: 10px;
+}
+#lista-tareas{
+    background-color: rgba(210, 104, 72, 0.504);
+    padding: 1rem;
+    border-radius: 20px;
+    margin-top: 1rem;
+}
+h1{
+    text-align: center;
+    font-size: 3em;
+    color: #262625;
+}
+form{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    gap: 0.8rem;
+}
+form>input:focus-visible{
+    outline: none;
+    border: 1px solid #d26848;
+}
+form>button{
+    padding: 0 10px;
+    border: none;
+    border-radius: 30px;
+    padding: 0 1rem;
+    background-color: #262625;
+    color: white;
+    font-weight: bold;
+}
+form>input{
+    height: 50px;
+    border-radius: 20px;
+    padding-left: 1rem;
+    border: 1px solid #d26848;
+}
+.sr-only {
+    position: absolute; 
+    width: 1px; 
+    height: 1px; 
+    padding: 0; 
+    margin: -1px; 
+    overflow: hidden; 
+    clip: rect(0, 0, 0, 0); 
+    white-space: nowrap;
+    border: 0;
+}
+.tarea:hover{
+    box-shadow: 0px 5px 9px 0px #b8bcb4
+}
+#añadir-tarea:hover{
+    transform: translateY(-3px);
+    opacity: 0.9;
+}
+#añadir-tarea{
+    cursor: pointer;
+    transition: transform ease-out .3s;
+}
+.tarea{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d26848;
+    padding: 1rem;
+    border-radius: 20px;
+    color: white;
+    margin-top: 1rem;
+    transition: box-shadow ease-out 0.3s;
+    gap: 1rem;
+}
+.tareaLista{
+    background-color: #b8bcb4d2;
+}
+.tareaLista label{
+    
+    text-decoration:line-through;
+}
+.tarea>label{
+   width: 100%;
+}
+.tarea>input{
+    width: 20px;
+    height: 20px;
+}
+.borrar-tarea:hover{
+  transform: scale(1.2);
+}
+.borrar-tarea{
+    background-color: #262625;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform ease-out 0.3s;
+    text-decoration: none;
+}
+
